@@ -21,6 +21,8 @@ services:
       timeout: 5s
     depends_on:
       - backend
+    volumes:
+      - ./frontend/config-core_demo.json:/usr/share/nginx/html/config-core_demo.json:ro
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
@@ -40,6 +42,7 @@ services:
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
+      - ../evzone-openmrs-config/configuration:/openmrs/distribution/openmrs_config:ro
 
   # MariaDB
   db:

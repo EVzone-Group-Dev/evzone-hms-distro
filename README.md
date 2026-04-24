@@ -36,7 +36,15 @@ The `COMPOSE_FILE` variable tells Docker Compose to automatically include the SS
 
 ## Overview
 
-This distribution consists of four images:
+EVzone HMS is a premium, multi-tenant SaaS healthcare platform. This repository assembles the platform components, configurations, and frontend microfrontends that form the core of the service.
+
+## Core Components
+
+- **Backend:** OpenMRS Platform 2.8.4
+- **Frontend:** OpenMRS O3 (Framework v9)
+- **Configuration:** `evzone-openmrs-config` (Initializer-based)
+- **Custom Modules:** `evzone-module-business`, `evzone-module-saas-admin`
+- **Custom ESMs:** `evzone-esm-branding`, `evzone-esm-admin`
 
 - **db** - This is just the standard MariaDB image supplied to use as a database
 - **backend** - This image is the OpenMRS backend. It is built from the main Dockerfile included in the root of the project and

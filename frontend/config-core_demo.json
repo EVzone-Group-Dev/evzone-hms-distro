@@ -40,6 +40,13 @@
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#005d5d"
+    "Brand color #1": "#1a5276",
+    "Brand color #2": "#f39c12",
+    "Brand color #3": "#d4e6f1"
+  },
+  "@evzone/esm-branding-app": {
+    "facilityName": "EVzone Medical Center",
+    "brandColor": "#1a5276"
   }
 }
+
