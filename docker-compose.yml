@@ -23,6 +23,9 @@ services:
       - backend
     volumes:
       - ./frontend/config-core_demo.json:/usr/share/nginx/html/config-core_demo.json:ro
+      - ./frontend/logo-horizontal.png:/usr/share/nginx/html/logo-horizontal.png:ro
+      - ./frontend/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
+
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
